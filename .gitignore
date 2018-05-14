@@ -1,6 +1,8 @@
 # Composer files
+.idea
 composer.phar
 vendor/
+composer.lock
 
 # Local configs
 config/autoload/*.local.php
