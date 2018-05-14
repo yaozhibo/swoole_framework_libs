@@ -17,7 +17,8 @@
         "psr-4": {
             "Rock\\Father\\": "src/Rock/Father",
             "Rock\\Mother\\": "src/Rock/Mother",
-            "Rock\\Sister\\": "src/Rock.Sister"
+            "Rock\\Sister\\": "src/Rock/Sister",
+            "Rock\\Swoole\\": "src/Rock/Swoole"
         }
     }
 }
