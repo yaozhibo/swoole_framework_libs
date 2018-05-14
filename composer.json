@@ -1,0 +1,14 @@
+{
+    "name": "yaozhibo/swoole_framework_libs",
+    "description": "Encapsulating swoole's framework libs.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yaozhibo",
+            "email": "yyaozhibo@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
