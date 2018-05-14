@@ -57,7 +57,7 @@ class WebSocket
      * @throws Rock\Swoole\Http\WebSocketException
      */
 
-    function __construct($host, $port = 80, $path ='/')
+    public function swoole_socket($host, $port = 80, $path ='/')
     {
         if(empty($host))
         {
@@ -70,7 +70,7 @@ class WebSocket
         $this->key = $this->generateToken(self::TOKEN_LENGTH);
         $this->parser = new Rock\Swoole\Http\WebSocketParser();
     }
-
+    
     /**
      * @param string $keyFile
      * @param string $certFile
