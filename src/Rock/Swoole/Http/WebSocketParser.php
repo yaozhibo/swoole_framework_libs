@@ -7,7 +7,7 @@
  */
 
 namespace Rock\Swoole\Http;
-
+use Rock\Swoole\Http\WebSocketFrame;
 class WebSocketParser
 {
     public $maxFrameSize = 2000000;
@@ -35,7 +35,7 @@ class WebSocketParser
      * @return bool | WebSocketFrame
      * @throws Rock\Swoole\Http\WebSocketException
      */
-    function pop()
+    function pop(WebSocketFrame $frame)
     {
         //当前有等待的frame
         if ($this->frame)
@@ -62,8 +62,7 @@ class WebSocketParser
         {
             return false;
         }
-
-        $frame = new WebSocketFrame;
+        
         $data_offset = 0;
 
         //fin:1 rsv1:1 rsv2:1 rsv3:1 opcode:4
@@ -160,24 +159,4 @@ class WebSocketParser
             $frame->data = $data;
         }
     }
-}
-
-
-class WebSocketFrame
-{
-    public $finish = false;
-    public $opcode;
-    public $data;
-
-    public $length;
-    public $rsv1;
-    public $rsv2;
-    public $rsv3;
-    public $mask;
-}
-
-
-class WebSocketException extends \Exception
-{
-
 }
