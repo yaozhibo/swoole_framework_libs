@@ -16,7 +16,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Rock\\Swoole": "src/Rock/Swoole"
+            "Rock\\Father\\": "src/Rock/Father",
+            "Rock\\Mother\\": "src/Rock/Mother",
+            "Rock\\Sister\\": "src/Rock.Sister"
         }
     }
 }
