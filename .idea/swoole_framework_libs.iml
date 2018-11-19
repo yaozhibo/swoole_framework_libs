@@ -2,10 +2,8 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/Rock/Mother" isTestSource="false" packagePrefix="Rock\Mother\" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Rock/Father" isTestSource="false" packagePrefix="Rock\Father\" />
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Swoole\" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Rock/Sister" isTestSource="false" packagePrefix="Rock\Sister\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Swoole" isTestSource="false" packagePrefix="Swoole\" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="YSwoole\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
     </content>
     <orderEntry type="inheritedJdk" />

@@ -15,7 +15,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Swoole\\": "src/"
+            "Swoole\\": "src/Swoole",
+            "YSwoole\\": "src/"
         }
     }
 }
