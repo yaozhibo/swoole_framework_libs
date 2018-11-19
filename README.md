@@ -1,1 +1,2 @@
 # swoole_framework_libs
+composer require yaozhibo/swoole_framework_libs
