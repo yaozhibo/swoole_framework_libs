@@ -2,7 +2,7 @@
 This is a vendor base on swoole, to speed up laravel/lumen.
 
 # install
-composer require yaozhibo/swoole_framework_libs:1.0.2
+composer require yaozhibo/swoole_framework_libs
 
 # register
 - modify config/app.php
