@@ -1,0 +1,10 @@
+<?php
+namespace DummyNamespace;
+
+use Illuminate\Http\Request;
+use YSwoole\Core\Coroutine\Http\Controller;
+
+class DummyClass extends Controller
+{
+    //
+}

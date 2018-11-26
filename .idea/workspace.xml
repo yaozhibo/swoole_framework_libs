@@ -2,15 +2,221 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf610690-f91f-49e8-99e7-8e10299612d4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Commands/HttpServerCommand.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Exceptions/PublicException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/CliTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/ExceptionTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Utils/Process.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Utils/ResultHelper.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/swoole_framework_libs.iml" afterPath="$PROJECT_DIR$/.idea/swoole_framework_libs.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Commands/YSControllerMakeCommand.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Commands/stubs/yscontroller.model.stub" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Commands/stubs/yscontroller.nested.stub" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Commands/stubs/yscontroller.plain.stub" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Commands/stubs/yscontroller.stub" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Coroutine/Context.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Coroutine/Database/Connectors/MySqlConnector.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Coroutine/Database/MySqlConnection.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Coroutine/Database/PDO.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Coroutine/Database/PDOMysqlStatement.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Coroutine/Http/Controller.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Coroutine/Routing/Controller.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Facades/Server.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Manager.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Resets/BindRequest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Resets/ClearInstances.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Resets/RebindKernelContainer.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Resets/RebindRouterContainer.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Resets/RebindViewContainer.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Resets/ResetConfig.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Resets/ResetContract.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Resets/ResetCookie.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Resets/ResetProviders.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Resets/ResetSession.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Sandbox.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Task/Connectors/SwooleTaskConnector.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Task/SwooleTaskJob.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Task/SwooleTaskQueue.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/helpers.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Exceptions/ConnectionException.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Exceptions/SandboxException.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Exceptions/StatementException.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Providers/LaraServiceProvider.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Providers/LumenServiceProvider.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Tables/Facades/SwooleTable.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Tables/SwooleTable.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/InteractsWithSwooleTable.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/ResetApplication.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/WithApplication.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Transformers/Request.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Transformers/Response.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/YSwooleHttpProvider.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/configs/yswoole_coroutine_db.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/configs/yswoole_http.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/HttpServerCommand.php" afterPath="$PROJECT_DIR$/src/Commands/HttpServerCommand.php" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/ArrayObject.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Async/HttpClient.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Async/MySQL.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Async/Pool.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Async/Redis.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Async/WebSocket.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Auth.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/BaseObject.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Binary.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/CLPack.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Cache/DBCache.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Cache/FileCache.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Cache/Memcache.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Cache/Redis.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/CURL.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/CoMySQL.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/CoURL.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/Http.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/RPC.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/Rest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/SOA.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/Socket.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/Stream.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/TCP.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/UDP.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/WebSocket.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Client/testWs.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Command/MakeApplication.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Command/MakeConfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Command/MakeController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Command/MakeModel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Component/Event.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Component/Observer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Component/QueryBuilder.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Component/Redis.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Console.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Content.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Controller.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Cookie.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Core.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Coroutine/Component/Base.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Coroutine/Component/MySQL.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Coroutine/Component/Redis.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Coroutine/Context.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Coroutine/Memcache.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Coroutine/RPC.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Csv.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/DES.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/DOM/Node.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/DOM/Tree.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Database.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Database/MySQL.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Database/MySQLi.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Database/PdoDB.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Database/Proxy.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Encrypter.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Env.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Error.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Exception/Factory.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Exception/FileNotFound.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Exception/InvalidParam.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Exception/NotFound.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Exception/Response.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Exception/Syscall.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Factory.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Filter.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Form.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/GeneralView.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/HTML.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Html/Table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Http.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Http/ExtParser.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Http/ExtServer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Http/LAMP.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Http/PWS.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Http/Parser.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Http/WebSocketParser.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/IFace/Cache.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/IFace/EventHandler.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/IFace/Http.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/IFace/HttpParser.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/IFace/Log.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/IFace/Observer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/IFace/Protocol.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/IFace/Queue.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/IFace/Router.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Image.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/ImageLocal.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/JS.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Limit.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Loader.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Lock/DB.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Lock/File.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Log.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Log/DBLog.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Log/EchoLog.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Log/FileLog.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Log/PHPLog.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Memory/Storage.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Memory/Stream.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Memory/Struct.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Model.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Model/Dict.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/ModelLoader.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Network/BlockTCP.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Network/BlockUDP.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Network/EventTCP.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Network/EventUDP.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Network/SelectTCP.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Network/SelectUDP.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Network/Server.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Network/Socket.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Network/Stream.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/PageCache.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Pager.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Phar.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Platform/Linux.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Platform/Windows.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/PluginLoader.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/AppFPM.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/AppServer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/Base.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/ChatServer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/CometServer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/FastCGI.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/FlashPolicy.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/FtpServer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/HttpServer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/QueueServer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/RPCServer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/SOAServer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/WebServer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Protocol/WebSocket.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Queue.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Queue/Cache.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Queue/File.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Queue/HttpQueue.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Queue/MsgQ.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Queue/Redis.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/RandomKey.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Record.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/RecordSet.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Request.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Response.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Router/MVC.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Router/Rewrite.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/SelectDB.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Server/Base.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Server/Driver.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Server/LinuxTCP.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Session.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/SiteDict.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Stdio.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/StringObject.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Swoole.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Template.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Tool.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/URL.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Upload.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/Validate.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/View.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Swoole/WebService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/CliTrait.php" afterPath="$PROJECT_DIR$/src/Traits/CliTrait.php" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/ExceptionTrait.php" afterPath="$PROJECT_DIR$/src/Traits/ExceptionTrait.php" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Process.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/ResultHelper.php" afterPath="$PROJECT_DIR$/src/Utils/ResultHelper.php" />
+      <change beforePath="$PROJECT_DIR$/src/lib_config.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,107 +230,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
               <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpServerCommand.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Commands/HttpServerCommand.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-              <folding>
-                <element signature="e#6#85#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CliTrait.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Traits/CliTrait.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExceptionTrait.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Traits/ExceptionTrait.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Server.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Swoole/Network/Server.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-58">
-              <caret line="165" column="9" lean-forward="true" selection-start-line="165" selection-start-column="9" selection-end-line="165" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pcntl.php" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/pcntl/pcntl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="490" column="23" lean-forward="true" selection-start-line="490" selection-start-column="23" selection-end-line="490" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Swoole.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Swoole/Swoole.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="957" column="35" lean-forward="false" selection-start-line="957" selection-start-column="35" selection-end-line="957" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PublicException.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exceptions/PublicException.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-115">
-              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-              <folding>
-                <element signature="e#38#69#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultHelper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Utils/ResultHelper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding>
-                <element signature="e#76#113#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Process.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Utils/Process.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -169,7 +279,6 @@
         <option value="$PROJECT_DIR$/src/Rock/Swoole/Swoole.php" />
         <option value="$PROJECT_DIR$/src/lib_config.php" />
         <option value="$PROJECT_DIR$/src/LoadConfig.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Utils/ResultHelper.php" />
         <option value="$PROJECT_DIR$/src/Exceptions/PublicException.php" />
         <option value="$PROJECT_DIR$/src/Utils/Proccess.php" />
@@ -179,6 +288,7 @@
         <option value="$PROJECT_DIR$/src/Utils/Process.php" />
         <option value="$PROJECT_DIR$/src/Traits/CliTrait.php" />
         <option value="$PROJECT_DIR$/src/Commands/HttpServerCommand.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -194,9 +304,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="x" value="1913" />
+    <option name="width" value="1935" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -231,7 +340,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,16 +352,11 @@
               <item name="swoole_framework_libs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="swoole_framework_libs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swoole_framework_libs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Traits" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,15 +367,16 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\projects\web\php\personal\swoole_framework_libs\src" />
+      <recent name="B:\projects\web\php\personal\swoole_framework_libs\src\Rock" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="B:\projects\web\php\personal\swoole_framework_libs\src" />
       <recent name="B:\projects\web\php\personal\swoole_framework_libs\src\Utils" />
       <recent name="B:\projects\web\php\personal\swoole_framework_libs\src\Exceptions" />
       <recent name="B:\projects\web\php\personal\swoole_framework_libs\src\Rock" />
       <recent name="B:\projects\web\php\personal\swoole_framework_libs\src\Rock\Swoole" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="B:\projects\web\php\personal\swoole_framework_libs\src" />
-      <recent name="B:\projects\web\php\personal\swoole_framework_libs\src\Rock" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -303,18 +407,20 @@
       <workItem from="1526262435692" duration="23265000" />
       <workItem from="1537407271265" duration="8691000" />
       <workItem from="1537529710534" duration="34000" />
-      <workItem from="1542613297031" duration="6641000" />
+      <workItem from="1542613297031" duration="6693000" />
+      <workItem from="1542676177495" duration="2849000" />
+      <workItem from="1543202101967" duration="1104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38631000" />
+    <option name="totallyTimeSpent" value="42636000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="1913" y="0" width="1935" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26346666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -347,19 +453,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lib_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -513,7 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,7 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -529,7 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-345">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -537,7 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -545,7 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -553,15 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-161">
           <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,52 +658,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Swoole/Swoole.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="22011">
           <caret line="957" column="35" lean-forward="false" selection-start-line="957" selection-start-column="35" selection-end-line="957" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/pcntl/pcntl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="490" column="23" lean-forward="true" selection-start-line="490" selection-start-column="23" selection-end-line="490" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Swoole/Network/Server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="165" column="9" lean-forward="true" selection-start-line="165" selection-start-column="9" selection-end-line="165" selection-end-column="9" />
+        <state relative-caret-position="3749">
+          <caret line="165" column="9" lean-forward="false" selection-start-line="165" selection-start-column="9" selection-end-line="165" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exceptions/PublicException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="e#38#69#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/ResultHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="e#76#113#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/Process.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+          <caret line="13" column="58" lean-forward="false" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -628,7 +699,7 @@
     <entry file="file://$PROJECT_DIR$/src/Traits/ExceptionTrait.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -643,11 +714,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Commands/HttpServerCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="6509">
+          <caret line="283" column="27" lean-forward="false" selection-start-line="283" selection-start-column="27" selection-end-line="283" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/stubs/yscontroller.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/pcntl/pcntl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="490" column="23" lean-forward="false" selection-start-line="490" selection-start-column="23" selection-end-line="490" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

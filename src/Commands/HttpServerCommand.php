@@ -11,15 +11,16 @@ use Throwable;
 use Illuminate\Console\Command;
 use YSwoole\Exceptions\PublicException;
 use YSwoole\Traits\CliTrait;
-use YSwoole\Utils\Process;
+use Swoole\Process;
 use YSwoole\Traits\ExceptionTrait;
+use YSwoole\Core\Facades\Server;
 
 class HttpServerCommand extends Command
 {
     use ExceptionTrait,
         CliTrait;
     
-    protected $signature = 'yswoole: http {action: start|stop|restart|reload|infos}';
+    protected $signature = 'yswoole:http {action : start|stop|restart|reload|infos}';
 
     protected $description = 'Swoole Http Server command.';
 
@@ -38,6 +39,12 @@ class HttpServerCommand extends Command
 
         $this->phpVersionFilter();
 
+        $this->injectConfigs();
+        
+        $this->initAction();
+        
+
+        $this->runAction();
     }
 
     protected function injectConfigs()
@@ -50,11 +57,33 @@ class HttpServerCommand extends Command
         $this->{$this->action}();
     }
 
+    protected function outputLogo()
+    {
+        static $logo = <<<EOS
+__    _ _                               _       _  ______
+\ \  / | |                             | |     | |/ ____ \
+ \ \/ /| |     __ _ _ __ __ ___   _____| |     | / /   _\_|
+  \  / | |    / _` | '__/ _` \ \ / / _ \ |     | | |  |___|    
+  | |  | |___| (_| | | | (_| |\ V /  __/ |  _  | \ \____| |      
+  |_|__|______\__,_|_|  \__,_| \_/ \___|_|_|_|_|_|\_______|    
+                                           
+EOS;
+        $this->info($logo);
+        $this->info('Speed up your Laravel/Lumen');
+        $this->table(['Component', 'Version'], [
+            ['Component' => 'PHP', 'Version' => phpversion()],
+            ['Component' => 'Swoole', 'Version' => \swoole_version()],
+            ['Component' => $this->getApplication()->getName(), 'Version' => $this->getApplication()->getVersion()],
+        ]);
+    }
+
     /**
      * Run swoole_http_server.
      */
     protected function start()
     {
+        $this->outputLogo();
+
         if ($this->isRunning($this->getPid())) {
             $this->http_error_30000('Failed! swoole_http_server process is already running.');
             exit(1);
@@ -70,7 +99,7 @@ class HttpServerCommand extends Command
                 'swoole_http_server process is running: ps aux|grep "swoole")');
         }
 
-        $this->laravel->make('swoole.manager')->run();
+        $this->laravel->make('yswoole.manager')->run();
     }
 
     /**
@@ -224,7 +253,7 @@ class HttpServerCommand extends Command
      */
     protected function killProcess($pid, $sig, $wait = 0)
     {
-        Process::kill($pid, $sig);
+        $res = Process::kill($pid, $sig);
 
         if ($wait) {
             $start = time();
