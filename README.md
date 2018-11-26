@@ -3,7 +3,7 @@
 install
 composer require yaozhibo/swoole_framework_libs:1.0.2
 
-#register
+# register
 - modify config/app.php
 <pre>
 'providers' =>
@@ -19,12 +19,12 @@ composer require yaozhibo/swoole_framework_libs:1.0.2
 .
 ]
 </pre>
-#publish
+# publish
 <pre>
 php artisan vendor:publish --provider="YSwoole\YSwooleHttpProvider"
 </pre>
 
-#config
+# config
 - modify http server ip and port in config/yswoole_http.php
 <pre>
 return [
@@ -38,13 +38,13 @@ return [
 ]      
 </pre>
 
-#db.connection
+# db.connection
 - modify db connection in .env to enable mysql coroutine
 <pre>
 DB_CONNECTION=swoole_mysql_coroutine
 </pre>
 
-#controller
+# controller
 if your php version is lower than 7.1, you need to use 
 <pre>php artisan make:yscontroller</pre>
 to generate controller, or you could not use controller to finish mysql operation.
