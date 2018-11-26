@@ -10,7 +10,7 @@ namespace YSwoole\Providers;
 use YSwoole\Core\Manager;
 use Illuminate\Support\ServiceProvider;
 
-class LaraServiceProvider extends ServiceProvider
+class LumenServiceProvider extends ServiceProvider
 {
     public function register()
     {
