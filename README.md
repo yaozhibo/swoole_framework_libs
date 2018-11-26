@@ -26,19 +26,11 @@ php artisan vendor:publish --provider="YSwoole\YSwooleHttpProvider"
 </pre>
 
 # config
-- modify http server ip and port in config/yswoole_http.php
+- modify http server ip and port in .env
 <pre>
-return [
-    'server' => [
-      'host' => env('SWOOLE_HTTP_HOST', ip), //set http server ip.
-      'port' => env('SWOOLE_HTTP_PORT', port), //set http server port.
-      .
-      .
-      'daemonize' => env('SWOOLE_HTTP_DAEMONZE', true), //set http server daermonize.
-      .
-      .
-    ]
-]      
+SWOOLE_HTTP_HOST=ip       #default:0.0.0.0
+SWOOLE_HTTP_PORT=port     #default:8333
+SWOOLE_HTTP_DAEMONZE=true #default:false
 </pre>
 
 # db.connection
