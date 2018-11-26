@@ -30,9 +30,11 @@ php artisan vendor:publish --provider="YSwoole\YSwooleHttpProvider"
 <pre>
 return [
     'server' => [
-      'host' => env('SWOOLE_HTTP_HOST', ip),
-      'port' => env('SWOOLE_HTTP_PORT', port),
+      'host' => env('SWOOLE_HTTP_HOST', ip), //set http server ip.
+      'port' => env('SWOOLE_HTTP_PORT', port), //set http server port.
       .
+      .
+      'daemonize' => env('SWOOLE_HTTP_DAEMONZE', true), //set http server daermonize.
       .
       .
     ]
